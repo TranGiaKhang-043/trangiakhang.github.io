@@ -2,61 +2,157 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CV — Trần Gia Khang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV – Trần Gia Khang</title>
   <style>
-    :root{
-      --accent:#E7B6A4;
-      --accent-dark:#C78F78;
-      --muted:#6b7280;
-      --bg:#faf7f5;
-      --card:#ffffff;
-      font-family:Inter, system-ui;
+    body {
+      margin: 0;
+      background: #f7f5f5;
+      font-family: Inter, sans-serif;
+      color: #222;
     }
-    body{margin:0;background:var(--bg);color:#111}
-    .container{max-width:1000px;margin:28px auto;padding:20px}
-    .card{background:var(--card);border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.06);overflow:hidden;display:grid;grid-template-columns:320px 1fr}
-    @media(max-width:820px){.card{grid-template-columns:1fr}.left{order:2}.right{order:1}}
 
-    .left{background:var(--accent-dark);padding:28px;color:#fff;display:flex;flex-direction:column;gap:20px}
-    .avatar{width:140px;height:140px;border-radius:8px;object-fit:cover;border:6px solid #fff;align-self:center}
-    .name{font-size:22px;font-weight:700;text-align:center}
-    .role{text-align:center;font-size:14px;opacity:0.95}
+    .container {
+      width: 794px;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 20px;
+    }
 
-    .section-title{font-size:12px;text-transform:uppercase;opacity:0.9;margin-bottom:6px}
-    .info-item{font-size:14px;margin-bottom:6px}
-    .chip{background:#fff6f3;color:#5b3b32;padding:6px 10px;border-radius:999px;font-size:13px;margin:3px;display:inline-block}
+    .top-section {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
 
-    .right{padding:28px}
-    .muted{font-size:12px;color:var(--muted);text-transform:uppercase;margin-bottom:8px}
-    .about{font-size:15px;color:#222;line-height:1.6;margin-bottom:18px}
+    .avatar {
+      width: 180px;
+      height: 180px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 6px solid #fff;
+    }
+
+    .header-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .name {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .role {
+      font-size: 18px;
+      opacity: 0.95;
+    }
+
+    .section {
+      display: flex;
+      gap: 20px;
+    }
+
+    .left {
+      flex: 1;
+      padding: 24px 20px;
+      border-radius: 12px;
+      background: #d6a283;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+
+    .right {
+      flex: 2;
+      padding: 24px 20px;
+      border-radius: 12px;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .info-item {
+      margin-bottom: 6px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .chip {
+      background: #fff6f3;
+      color: #5b3b32;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      display: inline-block;
+      margin: 4px 4px 4px 0;
+    }
+
+    .big-heading {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #c46b37;
+    }
+
+    .big-content {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .soft-skills li {
+      margin-bottom: 6px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
-<div class="container">
-  <div class="card">
 
-    <aside class="left">
+<div class="container">
+  <div class="top-section">
     <img class="avatar" src="../Img&Vid/anhcanhan.png" alt="Ảnh chân dung">
+    <div class="header-info">
       <div class="name">Trần Gia Khang</div>
       <div class="role">Sinh viên ngành Công Nghệ Thông Tin</div>
+    </div>
+  </div>
 
+  <div class="section">
+    <div class="left">
       <div>
         <div class="section-title">Thông tin cá nhân</div>
-        <div class="info-item">Ngày sinh: 14/11/2007</div>
-        <div class="info-item">Giới tính: Nam</div>
-        <div class="info-item">Email: trankhang141107@gmail.com</div>
-        <div class="info-item">Điện thoại: 0366070004</div>
-        <div class="info-item">Địa chỉ: TP. Hồ Chí Minh, Việt Nam</div>
+        <div class="info-item">🎂 Ngày sinh: 14/11/2007</div>
+        <div class="info-item">👤 Giới tính: Nam</div>
+        <div class="info-item">📍 TP. Hồ Chí Minh, Việt Nam</div>
       </div>
 
       <div>
-        <div class="section-title">Kỹ năng</div>
+        <div class="section-title">Thông tin liên lạc</div>
+        <div class="info-item">📧 Email: trankhang141107@gmail.com</div>
+        <div class="info-item">📞 Điện thoại: 0366070004</div>
+      </div>
+
+      <div>
+        <div class="section-title">Kỹ năng chuyên ngành</div>
         <div class="chip">HTML cơ bản</div>
         <div class="chip">CSS cơ bản</div>
         <div class="chip">C++ cơ bản</div>
         <div class="chip">Git/GitHub cơ bản</div>
-        <div class="chip">Tin học văn phòng (MOS: Excel, Word, PowerPoint)</div>
       </div>
 
       <div>
@@ -65,20 +161,33 @@
         <div class="info-item">Ngành Công nghệ Thông tin</div>
         <div class="info-item">2025 – 2026 (Sinh viên năm nhất)</div>
       </div>
+    </div>
+
+    <div class="right">
+      <div>
+        <div class="big-heading">Kỹ năng mềm</div>
+        <div class="big-content">
+          <ul class="soft-skills">
+            <li>Sử dụng thành thạo tin học văn phòng</li>
+            <li>Kỹ năng chỉnh sửa ảnh, edit video cơ bản</li>
+            <li>Ứng dụng AI trong học tập & công việc</li>
+            <li>Giao tiếp và sử dụng tiếng Anh ở mức cơ bản</li>
+            <li>Làm việc nhóm và giao tiếp tốt</li>
+            <li>Trách nhiệm – Chủ động trong công việc</li>
+          </ul>
+        </div>
+      </div>
 
       <div>
-        <div class="section-title">Ngôn ngữ</div>
-        <div class="chip">Tiếng Việt</div>
-        <div class="chip">Tiếng Anh (Trung cấp)</div>
+        <div class="big-heading">Mục tiêu nghề nghiệp</div>
+        <div class="big-content">
+          Mong muốn phát triển sự nghiệp với định hướng trở thành một <strong>Front-end Developer</strong>, <strong>Computer Hardware Engineer</strong> hoặc <strong>Systems Engineer</strong>. Bản thân tập trung vào việc rèn luyện kỹ năng mềm, năng lực tự học và tinh thần làm việc nhóm để đáp ứng yêu cầu ngày càng cao, sự đổi mới trong lĩnh vực Công nghệ Thông tin.
+        </div>
       </div>
-    </aside>
 
-    <main class="right">
-      <div class="muted">Mục tiêu nghề nghiệp</div>
-      <p class="about">Mong muốn khi ra trường có được việc làm đúng chuyên ngành chẳng hạn như vị trí Computer Hardware Engineer, Systems Engineer và Front-end Developer trong tương lai.</p>
-    </main>
-
+    </div>
   </div>
 </div>
+
 </body>
 </html>
