@@ -1,193 +1,163 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CV – Trần Gia Khang</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Trần Gia Khang</title>
   <style>
-    body {
+    * {
       margin: 0;
-      background: #f7f5f5;
-      font-family: Inter, sans-serif;
-      color: #222;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .container {
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
       width: 794px;
+      height: 1123px;
       margin: 40px auto;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding: 0 20px;
-    }
-
-    .top-section {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
-
-    .avatar {
-      width: 180px;
-      height: 180px;
-      border-radius: 10px;
-      object-fit: cover;
-      border: 6px solid #fff;
-    }
-
-    .header-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .name {
-      font-size: 32px;
-      font-weight: 700;
-    }
-
-    .role {
-      font-size: 18px;
-      opacity: 0.95;
-    }
-
-    .section {
-      display: flex;
-      gap: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      overflow: hidden;
     }
 
     .left {
-      flex: 1;
-      padding: 24px 20px;
-      border-radius: 12px;
-      background: #d6a283;
+      background-color: #d6a283;
       color: white;
+      width: 30%;
+      padding: 30px 20px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      gap: 20px;
+      align-items: flex-start;
     }
 
-    .right {
-      flex: 2;
-      padding: 24px 20px;
-      border-radius: 12px;
-      background: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      gap: 20px;
+    .left img {
+      width: 200px;
+      height: auto;
+      object-fit: cover;
+      border: 4px solid white;
+      margin: 0 auto 25px;
+      display: block;
     }
 
     .section-title {
-      font-size: 16px;
       font-weight: bold;
-      text-transform: uppercase;
-      margin-bottom: 10px;
+      margin: 16px 0 6px;
+      font-size: 18px;
     }
 
     .info-item {
+      font-size: 14px;
+      margin-bottom: 8px;
+      text-align: left;
+    }
+
+    .skill-bar {
+      background: #fff;
+      border-radius: 5px;
+      margin: 4px 0 10px;
+      height: 10px;
+      width: 100%;
+    }
+
+    .skill-bar-fill {
+      background-color: #a05d3b;
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    .right {
+      width: 70%;
+      padding: 30px 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .role {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    .section-block {
+      margin-bottom: 18px;
+    }
+
+    .section-block h3 {
+      color: #c46b37;
+      font-size: 18px;
       margin-bottom: 6px;
+    }
+
+    .section-block p, .section-block ul {
       font-size: 15px;
       line-height: 1.5;
     }
 
-    .chip {
-      background: #fff6f3;
-      color: #5b3b32;
-      padding: 8px 12px;
-      border-radius: 999px;
-      font-size: 14px;
-      display: inline-block;
-      margin: 4px 4px 4px 0;
-    }
-
-    .big-heading {
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 10px;
-      color: #c46b37;
-    }
-
-    .big-content {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .soft-skills li {
+    ul.skills-soft li {
       margin-bottom: 6px;
-      font-size: 16px;
-      line-height: 1.6;
     }
   </style>
 </head>
 <body>
+  <div class="left">
+    <img src="../Img&Vid/anhcanhan.png" alt="Ảnh cá nhân">
 
-<div class="container">
-  <div class="top-section">
-    <img class="avatar" src="../Img&Vid/anhcanhan.png" alt="Ảnh chân dung">
-    <div class="header-info">
-      <div class="name">Trần Gia Khang</div>
-      <div class="role">Sinh viên ngành Công Nghệ Thông Tin</div>
+    <div class="section-title">ABOUT ME</div>
+    <div class="info-item">🎂 Date of Birth: 14/11/2007</div>
+    <div class="info-item">👤 Gender: Male</div>
+    <div class="info-item">📍 Location: Ho Chi Minh City, Vietnam</div>
+
+    <div class="section-title">CONTACT</div>
+    <div class="info-item">📧 Email: trankhang141107@gmail.com</div>
+    <div class="info-item">📞 Phone: 0366070004</div>
+
+    <div class="section-title">SKILLS</div>
+    <div style="width: 100%;">
+      <div>HTML (Basic)</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+      <div>CSS (Basic)</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;"></div></div>
+      <div>C++ (Basic)</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 65%;"></div></div>
+      <div>Git/GitHub (Basic)</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%;"></div></div>
     </div>
   </div>
 
-  <div class="section">
-    <div class="left">
-      <div>
-        <div class="section-title">Thông tin cá nhân</div>
-        <div class="info-item">🎂 Ngày sinh: 14/11/2007</div>
-        <div class="info-item">👤 Giới tính: Nam</div>
-        <div class="info-item">📍 TP. Hồ Chí Minh, Việt Nam</div>
-      </div>
+  <div class="right">
+    <div class="name">Trần Gia Khang</div>
+    <div class="role">IT Student</div>
 
-      <div>
-        <div class="section-title">Thông tin liên lạc</div>
-        <div class="info-item">📧 Email: trankhang141107@gmail.com</div>
-        <div class="info-item">📞 Điện thoại: 0366070004</div>
-      </div>
-
-      <div>
-        <div class="section-title">Kỹ năng chuyên ngành</div>
-        <div class="chip">HTML cơ bản</div>
-        <div class="chip">CSS cơ bản</div>
-        <div class="chip">C++ cơ bản</div>
-        <div class="chip">Git/GitHub cơ bản</div>
-      </div>
-
-      <div>
-        <div class="section-title">Học vấn</div>
-        <div class="info-item">Trường Đại học Sư phạm TP.HCM</div>
-        <div class="info-item">Ngành Công nghệ Thông tin</div>
-        <div class="info-item">2025 – 2026 (Sinh viên năm nhất)</div>
-      </div>
+    <div class="section-block">
+      <h3>SOFT SKILLS</h3>
+      <ul class="skills-soft">
+        <li><strong>Teamwork & Communication Skills</strong></li>
+        <li><strong>English Proficiency</strong> (Basic)</li>
+        <li><strong>Problem-Solving & Critical Thinking</strong></li>
+        <li><strong>Responsibility and Proactivity</strong></li>
+        <li><strong>Office/Productivity Tools</strong>  </li>
+        <li><strong>AI Application</strong></li>
+      </ul>
     </div>
 
-    <div class="right">
-      <div>
-        <div class="big-heading">Kỹ năng mềm</div>
-        <div class="big-content">
-          <ul class="soft-skills">
-            <li>Sử dụng thành thạo tin học văn phòng</li>
-            <li>Kỹ năng chỉnh sửa ảnh, edit video cơ bản</li>
-            <li>Ứng dụng AI trong học tập & công việc</li>
-            <li>Giao tiếp và sử dụng tiếng Anh ở mức cơ bản</li>
-            <li>Làm việc nhóm và giao tiếp tốt</li>
-            <li>Trách nhiệm – Chủ động trong công việc</li>
-          </ul>
-        </div>
-      </div>
+    <div class="section-block">
+      <h3>CAREER OBJECTIVE</h3>
+      <p>I aim to build a career in the IT field, focusing on roles such as <strong>Front-end Developer</strong>, <strong>Computer Hardware Engineer</strong>, or <strong>Systems Engineer</strong>. I am committed to proactively learning and researching new technologies to stay current with industry trends and meet business demands.</p>
+    </div>
 
-      <div>
-        <div class="big-heading">Mục tiêu nghề nghiệp</div>
-        <div class="big-content">
-          Mong muốn phát triển sự nghiệp với định hướng trở thành một <strong>Front-end Developer</strong>, <strong>Computer Hardware Engineer</strong> hoặc <strong>Systems Engineer</strong>. Bản thân tập trung vào việc rèn luyện kỹ năng mềm, năng lực tự học và tinh thần làm việc nhóm để đáp ứng yêu cầu ngày càng cao, sự đổi mới trong lĩnh vực Công nghệ Thông tin.
-        </div>
-      </div>
-
+    <div class="section-block">
+      <h3>EDUCATION</h3>
+      <p>Ho Chi Minh City University of Education<br>
+      Information Technology Major<br>
+      2025 – 2026 (First-year student)</p>
     </div>
   </div>
-</div>
-
 </body>
 </html>
